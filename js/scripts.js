@@ -15,6 +15,9 @@ var beepBoop = function(number) {
       array.push(i);
     }
   }
+  if (document.getElementById("reverse").checked) {
+    array.reverse();
+  }
   var endString = array.join(" ");
   return endString;
 }
@@ -25,6 +28,7 @@ $(document).ready(function(){
     $("#result").empty();
     var number = $("#number").val();
     var result = beepBoop(number);
+    //var reversed = $("input:checkbox[name=reverse]:checked").val();
     $("#result").append(result);
   })
 })

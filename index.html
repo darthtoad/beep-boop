@@ -10,15 +10,22 @@
   </head>
   <body>
     <div class="container">
-      <h1>Beep Boop</h1>
-      <h2>Enter a number and see what happens</h2>
+      <div class="jumbotron">
+        <h1>Beep Boop</h1>
+        <h2>Enter a number and see what happens</h2>
+      </div>
       <form id="theForm">
         <div class="form-group">
           <label for="number">Enter a number</label>
           <input id="number" class="form-control" type="number">
         </div>
+        <div class="form-group">
+          <label for="reverse">Reverse the result!</label>
+          <input id="reverse" type="checkbox" name="reverse" value="reversed">
+        </div>
         <button type="submit" class="btn btn-primary">Magic!</button>
       </form>
+      <br>
       <div id="result">
       </div>
     </div>

@@ -1,0 +1,14 @@
+body {
+  background: url(../img/bg.jpg) no-repeat center center fixed;
+  background-size: cover;
+}
+
+label {
+  color: white;
+}
+
+#result {
+  color: blue;
+  font-weight: bold;
+  font-size: 16pt;
+}
