@@ -8,10 +8,10 @@ var beepBoop = function(number) {
 //    debugger;
     if (i === 42) {
       array.push("The answer to life, the universe, and everything.")
-    } else if (i.toString().match(re1)) {
-      array.push("Boop!");
     } else if (i.toString().match(re0)) {
       array.push("Beep!");
+    } else if (i.toString().match(re1)) {
+      array.push("Boop!");
     } else if (i % 3 === 0) {
       array.push("I'm sorry, " + document.getElementById("name").value + ". I'm afraid I can't do that.");
     } else if (i % 4 === 0) {
