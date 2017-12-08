@@ -1,8 +1,10 @@
 var beepBoop = function(number) {
   //debugger;
   var array = []
-  for (var i = 1; i <= number; i++) {
-    if (i === 1) {
+  for (var i = 0; i <= number; i++) {
+    if (i === 0) {
+      array.push("Beep!")
+    } else if (i === 1) {
       array.push("Boop!")
     } else {
       array.push(i);
