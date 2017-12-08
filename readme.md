@@ -13,11 +13,11 @@ _This app takes a number, then gives you all numbers below it, replacing certain
 | Spec | Input | Output |
 | :-------------     | :------------- | :------------- |
 | It can count up to the required number | 5 | 1, 2, 3, 4, 5 |
-| It can replace 1 with boop | 1 | "boop" |
-| It can replace 0 with beep | 0 | "beep" |
+| It can replace 1 with Boop! | 1 | "Boop!" |
+| It can replace 0 with Beep! | 0 | "Beep!" |
 | It can replace 3 with "I'm sorry, Dave. I'm afraid I can't do that." | 3 | "I'm sorry, Dave. I'm afraid I can't do that." |
-| It can replace any number containing 1 with boop | 31 | "boop" |
-| It can replace any number containing 0 with beep | 300 | "beep" |
+| It can replace any number containing 1 with Boop! | 31 | "Boop!" |
+| It can replace any number containing 0 with Beep! | 300 | "Beep!" |
 | It can replace any number divisible by 3 with "I'm sorry, Dave. I'm afraid I can't do that." | 9 | "I'm sorry, Dave. I'm afraid I can't do that." |
 
 ## Setup/Installation Requirements
