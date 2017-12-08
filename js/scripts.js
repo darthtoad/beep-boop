@@ -9,12 +9,11 @@ var beepBoop = function(number) {
       array.push("Boop!");
     } else if (i.toString().match(re0)) {
       array.push("Beep!")
-    } else if (i === 3) {
+    } else if (i % 3 === 0) {
       array.push("I'm sorry, Dave. I'm afraid I can't do that.")
     } else {
       array.push(i);
     }
-    i = parseInt(i);
   }
   var endString = array.join(" ");
   return endString;
