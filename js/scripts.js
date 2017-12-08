@@ -10,7 +10,7 @@ var beepBoop = function(number) {
     } else if (i.toString().match(re0)) {
       array.push("Beep!")
     } else if (i % 3 === 0) {
-      array.push("I'm sorry, Dave. I'm afraid I can't do that.")
+      array.push("I'm sorry, " + document.getElementById("name").value + ". I'm afraid I can't do that.")
     } else {
       array.push(i);
     }
@@ -28,7 +28,6 @@ $(document).ready(function(){
     $("#result").empty();
     var number = $("#number").val();
     var result = beepBoop(number);
-    //var reversed = $("input:checkbox[name=reverse]:checked").val();
     $("#result").append(result);
   })
 })
