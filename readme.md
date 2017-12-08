@@ -1,12 +1,12 @@
-# _Cryptosquare_
+# _Beep Boop_
 
-#### _Cryptosquare cryptography WebApp for Epicodus_
+#### _A program that does magic to numbers_
 
 #### By _**Sam Gespass**_
 
 ## Description
 
-_WebApp to convert a sentence into a cryptographic code._
+_This app takes a number, then gives you all numbers below it, replacing certain numbers with text._
 
 ## Specs
 
