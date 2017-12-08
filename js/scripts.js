@@ -6,6 +6,8 @@ var beepBoop = function(number) {
       array.push("Beep!")
     } else if (i === 1) {
       array.push("Boop!")
+    } else if (i === 3) {
+      array.push("I'm sorry, Dave. I'm afraid I can't do that.")
     } else {
       array.push(i);
     }
