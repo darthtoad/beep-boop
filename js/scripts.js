@@ -7,7 +7,7 @@ var beepBoop = function(number) {
 //    debugger;
     if (i.toString().match(re1)) {
       array.push("Boop!");
-    } else if (i === 0) {
+    } else if (i.toString().match(re0)) {
       array.push("Beep!")
     } else if (i === 3) {
       array.push("I'm sorry, Dave. I'm afraid I can't do that.")
