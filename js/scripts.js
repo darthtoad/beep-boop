@@ -1,12 +1,13 @@
 var re0 = /[0]/;
 var re1 = /[1]/;
+var re7 = /[7]/;
 
 var beepBoop = function(number) {
   var array = [];
   for (var i = 0; i <= number; i++) {
 //    debugger;
     if (i === 42) {
-      array.push("The answer to life, the universe, and everything")
+      array.push("The answer to life, the universe, and everything.")
     } else if (i.toString().match(re1)) {
       array.push("Boop!");
     } else if (i.toString().match(re0)) {
@@ -17,6 +18,10 @@ var beepBoop = function(number) {
       array.push("ALL YOUR BASE ARE BELONG TO US!");
     } else if (i % 5 === 0) {
       array.push("It follows the law of fives! Hail Eris! All hail Discordia!")
+    } else if (i.toString().match(re7)) {
+      array.push("Must be your lucky day.")
+    } else if (i % 2 === 0) {
+      array.push("Even Steven.")
     } else {
       array.push(i);
     }
