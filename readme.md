@@ -23,7 +23,7 @@ _This app takes a number, then gives you all numbers below it, replacing certain
 ## Setup/Installation Requirements
 
 * Download and install a web browser
-* Click on the following [link]() to use the Cryptosquare!
+* Click on the following [link](https://github.com/darthtoad/beep-boop) to use Beep Boop!
 
 ## Known Bugs
 
