@@ -24,7 +24,7 @@ var beepBoop = function(number) {
       } else if (i % 5 === 0) {
         array.push("It follows the law of fives! Hail Eris! All hail Discordia!")
       } else if (i.toString().match(re7)) {
-        array.push("Must be your lucky day.")
+        array.push("Must be your lucky day, " + document.getElementById("name").value + ".")
       } else if (i % 2 === 0) {
         array.push("Even Steven.")
       } else if (i.toString().match(re3)) {
