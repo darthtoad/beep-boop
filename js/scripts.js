@@ -4,7 +4,7 @@ var re3 = /[3]/;
 var re7 = /[7]/;
 var re9 = /[9]/;
 
-var beepBoop = function(number) {
+var beepBoop = function(number, name, reverse) {
   if (number < 0) {
     return "Negative numbers break the internet"
   } else {
@@ -18,13 +18,13 @@ var beepBoop = function(number) {
       } else if (i.toString().match(re1)) {
         array.push("Boop!");
       } else if (i % 3 === 0) {
-        array.push("I'm sorry, " + document.getElementById("name").value + ". I'm afraid I can't do that.");
+        array.push("I'm sorry, " + name + ". I'm afraid I can't do that.");
       } else if (i % 4 === 0) {
         array.push("ALL YOUR BASE ARE BELONG TO US!");
       } else if (i % 5 === 0) {
         array.push("It follows the law of fives! Hail Eris! All hail Discordia!")
       } else if (i.toString().match(re7)) {
-        array.push("Must be your lucky day, " + document.getElementById("name").value + ".")
+        array.push("Must be your lucky day, " + name + ".")
       } else if (i % 2 === 0) {
         array.push("Even Steven.")
       } else if (i.toString().match(re3)) {
@@ -35,7 +35,7 @@ var beepBoop = function(number) {
         array.push(i);
       }
     }
-    if (document.getElementById("reverse").checked) {
+    if (reverse) {
       array.reverse();
     }
     var endString = array.join(" ");
@@ -47,8 +47,10 @@ $(document).ready(function(){
   $("#theForm").submit(function(event){
     event.preventDefault();
     $("#result").empty();
+    var name = document.getElementById("name").value;
+    var reverse = document.getElementById("reverse").checked;
     var number = $("#number").val();
-    var result = beepBoop(number);
+    var result = beepBoop(number, name, reverse);
     $("#result").append(result);
   })
 })
