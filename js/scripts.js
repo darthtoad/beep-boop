@@ -7,30 +7,30 @@ var array = [];
 
 var beepBoop = function(number, name, reverse) {
   if (number < 0) {
-    return "Negative numbers break the internet";
+    return negative;
   } else {
     for (var i = 0; i <= number; i++) {
   //    debugger;
       if (i === 42) {
-        array.push(answer)
+        array.push(i + answer)
       } else if (i.toString().match(re0)) {
-        array.push(beep);
+        array.push(i + beep);
       } else if (i.toString().match(re1)) {
-        array.push(boop);
+        array.push(i + boop);
       } else if (i % 3 === 0) {
-        array.push(sorry + name + afraid);
+        array.push(i + sorry + name + afraid);
       } else if (i % 4 === 0) {
-        array.push(base);
+        array.push(i + base);
       } else if (i % 5 === 0) {
-        array.push(eris);
+        array.push(i + eris);
       } else if (i.toString().match(re7)) {
-        array.push(lucky + name + endLucky);
+        array.push(i + lucky + name + ".");
       } else if (i % 2 === 0) {
-        array.push(even);
+        array.push(i + even);
       } else if (i.toString().match(re3)) {
-        array.push(three);
+        array.push(i + three);
       } else if (i.toString().match(re9)) {
-        array.push(samus);
+        array.push(i + samus);
       } else {
         array.push(i);
       }
@@ -45,29 +45,29 @@ var beepBoop = function(number, name, reverse) {
 };
 
 //Beginning of front-end code
-var beep = "<li>Beep!</li>";
+var negative = "Negative numbers break the internet";
 
-var boop = "<li>Boop!</li>";
+var beep = ". Beep!<br>";
 
-var sorry = "<li>I'm sorry, ";
+var boop = ". Boop!<br>";
 
-var afraid = ". I'm afraid I can't do that.</li>";
+var sorry = ". I'm sorry, ";
 
-var lucky = "<li>Must be your lucky day, ";
+var afraid = ". I'm afraid I can't do that.<br>";
 
-var endLucky = ".</li>"
+var lucky = ". Must be your lucky day, "
 
-var three = "<li>Three's company!</li>";
+var three = ". Three's company!<br>";
 
-var even = "<li>Even Steven.</li>";
+var even = ". Even Steven.<br>";
 
-var base = "<li>ALL YOUR BASE ARE BELONG TO US!</li>";
+var base = ". ALL YOUR BASE ARE BELONG TO US!<br>";
 
-var eris = "<li>It follows the law of fives! Hail Eris! All hail Discordia!</li>";
+var eris = ". It follows the law of fives! Hail Eris! All hail Discordia!<br>";
 
-var samus = "<li>I AM SAMUS, OF THE 9TH CASTLE, OF THE 9TH LAND, OF THE 9TH NATION, OF THE 9TH WORLD, OF THE 9TH SOLAR SYSTEM, OF THE 9TH GALAXY, OF THE 9TH SUPERCLUSTER, OF THE 9TH UNIVERSE, OF THE 8TH DIMENSION, OF THE 9TH EYE OF GOD, KNIGHT OF THE ROUND-SHAPED CIRCULAR OVAL TABLE, CO-EMPEROR OF CASCADIA, CO-REGENT OF APPALACHIA, AND DEFENDER OF SILLINESS AND JUST US</li>";
+var samus = ". I AM SAMUS, OF THE 9TH CASTLE, OF THE 9TH LAND, OF THE 9TH NATION, OF THE 9TH WORLD, OF THE 9TH SOLAR SYSTEM, OF THE 9TH GALAXY, OF THE 9TH SUPERCLUSTER, OF THE 9TH UNIVERSE, OF THE 8TH DIMENSION, OF THE 9TH EYE OF GOD, KNIGHT OF THE ROUND-SHAPED CIRCULAR OVAL TABLE, CO-EMPEROR OF CASCADIA, CO-REGENT OF APPALACHIA, AND DEFENDER OF SILLINESS AND JUST US<br>";
 
-var answer = "<li>The answer to life, the universe, and everything.</li>";
+var answer = ". The answer to life, the universe, and everything.<br>";
 
 $(document).ready(function(){
   $("#theForm").submit(function(event){
