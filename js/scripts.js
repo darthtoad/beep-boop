@@ -12,7 +12,7 @@ var beepBoop = function(number, name, reverse) {
     for (var i = 0; i <= number; i++) {
   //    debugger;
       if (i === 42) {
-        array.push(i + answer)
+        array.push(i + answer);
       } else if (i.toString().match(re0)) {
         array.push(i + beep);
       } else if (i.toString().match(re1)) {
@@ -24,7 +24,7 @@ var beepBoop = function(number, name, reverse) {
       } else if (i % 5 === 0) {
         array.push(i + eris);
       } else if (i.toString().match(re7)) {
-        array.push(i + lucky + name + ".");
+        array.push(i + lucky + name + luckyEnd);
       } else if (i % 2 === 0) {
         array.push(i + even);
       } else if (i.toString().match(re3)) {
@@ -55,7 +55,9 @@ var sorry = ". I'm sorry, ";
 
 var afraid = ". I'm afraid I can't do that.<br>";
 
-var lucky = ". Must be your lucky day, "
+var lucky = ". Must be your lucky day, ";
+
+var luckyEnd = ".<br>";
 
 var three = ". Three's company!<br>";
 
