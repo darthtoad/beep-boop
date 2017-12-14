@@ -70,7 +70,7 @@ var samus = ". I AM SAMUS, OF THE 9TH CASTLE, OF THE 9TH LAND, OF THE 9TH NATION
 var answer = ". The answer to life, the universe, and everything.<br>";
 
 $(document).ready(function(){
-  $("#theForm").submit(function(event){
+  $("#the-form").submit(function(event){
     event.preventDefault();
     array = [];
     $("#result").empty();
