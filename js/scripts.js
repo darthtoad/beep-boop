@@ -39,7 +39,7 @@ var beepBoop = function(number, name, reverse) {
       array.reverse();
     }
     console.log(array);
-    var endString = array.join(" ");
+    var endString = array.join("");
     return endString;
   }
 };
